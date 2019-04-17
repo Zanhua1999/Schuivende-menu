@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+          ul{
+              list-style: none;
+          }
+          .nav>li{
+              float: left;
+          }
+          ul a{
+              display: block;
+              text-decoration: none;
+              width: 100px;
+              height: 50px;
+              text-align: center;
+              line-height: 50px;
+              color: white;
+              background-color: #2f3e45;
+          }
+          .nav>li:first-child a{
+              border-radius: 1px 0 0 1px;
+          }
+          .nav>li:last-child a{
+              border-radius: 0 1px 1px 0;
+          }
+          .drop-down{
+              position: relative;
+          }
+          .drop-down-content{
+              padding: 0;
+              position: absolute;
+              left: -999px;
+          }
+          h3{
+              font-size: 30px;
+              clear: both;
+          }
+          .drop-down-content li:hover a{
+              background-color:red;
+          }
+          .nav .drop-down:hover .drop-down-content{
+              left: 0;
+          }
+  </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">Menu</a></li>
+        <li class="drop-down"><a href="#">Menu</a>
+            <ul class="drop-down-content">
+                <li><a href="#">content1</a></li>
+                <li><a href="#">content2</a></li>
+                <li><a href="#">content3</a></li>
+            </ul>
+            </li>
+    </ul>
+    <h3>Menu voor content</h3>
+</body>
+<footer>
+  <a href="index.html">Home</a>
+</footer>
+</html>

@@ -1,0 +1,43 @@
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+nav {
+  text-align: center;
+    position: fixed;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+}
+
+
+
+
+
+section {
+    min-height: 100vh;
+    padding: 2em 2em 2em 9em;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
+
+#content {
+    background-color: red;
+}
+
+#menu {
+    background-color: yellow;
+    color: black;
+}
